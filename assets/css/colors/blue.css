@@ -1,10 +1,10 @@
 /* PRELOADER IMAGE BACKGROUND */
 .status {
-	background-image: url(loader-blue.gif);
-	background-repeat: no-repeat;
+	background-image: url(ajax-loader.gif);
+	width:250px;
+	height:250px;
 	background-position: center;
 	-webkit-background-size: cover;
-	background-size: cover;
 }
 
 /* THE OVERLAY COLORS WHICH WILL SHOW IN FRONT OF BACKGROUND IMAGES*/
