@@ -1,80 +1,264 @@
 <!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
-<html>
+<html lang="es" init="onLoad()">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+    <!-- SITE TITLE -->
+    <title>Jose Manuel Ortega</title>
 
-  <title>jmortega.github.io</title>
-  <meta name="description" content="Personal page in github">
+    <!-- =========================
+     FAV AND TOUCH ICONS AND FONT  
+    ============================== -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/favicon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/favicon-57.png">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,600|Open+Sans:300,600,400' rel='stylesheet'>
 
+    <!-- =========================
+     STYLESHEETS   
+    ============================== -->
+    <!-- BOOTSTRAP AND ANIMATION -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="assets/icons/icons.css">
+
+    <!-- CAROUSEL AND LIGHTBOX -->
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/nivo-lightbox.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!-- CUSTOM STYLESHEETS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- RESPONSIVE FIXES -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- COLORS -->
+    <link rel="stylesheet" href="assets/css/colors/blue.css">
+	
+	<link rel="stylesheet" href="assets/css/mediaelementplayer.css" /></code>
+	
+    <!-- DEFAULT COLOR/ CURRENTLY USING -->
+    <!-- <link rel="stylesheet" href="assets/css/colors/red.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/colors/green.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/colors/green2.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/colors/purple.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/colors/orange.css"> -->
+
+    <!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .standard-button,
+        .navbar-register-button {
+       filter: none;
+        }
+      </style>
+    <![endif]-->
+    <!-- ****************
+      After neccessary customization/modification, Please minify HTML/CSS according to http://browserdiet.com/en/ for better performance
+     **************** -->
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">jmortega.github.io</h1>
-    </header>
-    <div id="container">
-      <p class="tagline">Personal page in github</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/jmortega" class="code">View jmortega.github.io on GitHub</a>
+    <!-- =========================
+     PRE LOADER       
+    ============================== -->
+    <div class="preloader">
+        <div class="status">
+            &nbsp;
         </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-        </article>
-      </div>
     </div>
-    <footer>
-      <div class="owner">
 
-      <p><a href="https://github.com/jmortega" class="avatar"><img src="https://avatars3.githubusercontent.com/u/4352324?s=60" width="48" height="48"/></a>View <a href="https://github.com/jmortega">jmortega</a> on <a href="https://www.github.com">GitHub</a></p>
+    <!-- =========================
+     SECTION: HOME / HEADER  
+    ============================== -->
+    <header class="header" data-stellar-background-ratio="0.5" id="home">
 
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
+        <!-- COLOR OVER IMAGE -->
+        <div class="overlay-layer">
+
+            <!-- STICKY NAVIGATION -->
+            <div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation appear-on-scroll" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+
+                        <!-- LOGO ON STICKY NAV BAR -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#stamp-navigation">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-grid-2x2"></span>
+                        </button>
+
+                        <!-- LOGO -->
+                        <a class="navbar-brand" href="#" style="padding: 15px 15px;">
+                            <img src="assets/logo.png" alt="">
+                        </a>
+                        
+                    </div>
+
+                    <!-- TOP BAR -->
+                    <div class="navbar-collapse collapse" id="stamp-navigation">
+                        
+                        <ul class="nav navbar-nav navbar-left main-navigation small-text">
+                            <li class="not-active" ><a>Bienvenido<strong></strong></a></li>
+                        </ul>
+                        
+                        <ul class="nav navbar-nav navbar-right login-register small-text" style="cursor: pointer;">
+                            <!--<li class="register-button js-register inpage-scroll"><a ui-sref="logout" class="navbar-register-button">Cerrar Sesión</a></li>-->
+                        </ul>
+                        
+                    </div>
+                </div>
+                <!-- /END CONTAINER -->
+            </div>
+            <!-- /END STICKY NAVIGATION -->
+
+            <!-- CONTAINER -->
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div ui-view="body-view">
+    
+						<h1 class="intro white-text">José Manuel Ortega</h1>
+						<h5 class="white-text">YouTube videos</h5>
+    
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1">
+							<div class="horizontal-subscribe-form">
+
+							<button class="btn btn-primary standard-button" onclick="location.href='https://www.youtube.com/watch?v=sLsTXW2aNXY&list=LL15z66zJUg9mL-a4B9258mg'">Acceder</button>
+
+               
+							</div>
+							</div>
+						</div>
+
+            
+</div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <ul>
+            <li>
+                <img src="assets/logo.png" alt="">
+            </li>
+        </ul>
+    </div>
+    
+    
+    <section class="services grey-bg" id="section1">
+        <div class="container">
+
+            <div ui-view="app-launcher-view"></div>
+			
+			 <!-- SECTION HEADER -->
+			<div class="section-header">
+
+            <div class="small-text-medium uppercase colored-text">
+                Video Conferences
+            </div>
+			
+			<div>
+				<h2 class="dark-text"><a target="blank" href="https://www.youtube.com/watch?v=hfaAA7ln-kc"/>[2015] Seguridad en dispositivos móviles<a></h2>
+			</div>
+			
+			<div>
+				<h2 class="dark-text"><a target="blank" href="https://www.youtube.com/watch?v=sLsTXW2aNXY"/>[JBCNConf 2015] Comparing JVM Languages<a></h2>
+			</div>
+			
+            <div>
+				<h2 class="dark-text"><a target="blank" href="https://www.youtube.com/watch?v=GsGHwfXwBpI"/>[EuroPyhton 2015] Python Security & Cryptography<a></h2>
+			</div>
+			
+			<div>
+				<h2 class="dark-text"><a target="blank" href="https://www.youtube.com/watch?v=7qqojtbMCxs"/>[JSDayES 2015] Web Cryptography<a></h2>
+			</div>
+			
+			<div>
+				<h2 class="dark-text"><a target="blank" href="https://www.youtube.com/watch?v=x0gSCQYqRQ0"/>[T3chFest 2015] Mobile Backend as a Service (MBaaS)<a></h2>
+			</div>
+			
+			<div>
+				<h2 class="dark-text"><a target="blank" href="https://www.youtube.com/watch?v=0nlL0Wznopw"/>[T3chFest 2014] Android in Practice<a></h2>
+			</div>
+			
+			
+			
+			
+			<br/><br/>
+			<hr/>
+			<div class="small-text-medium uppercase colored-text">
+                Interviews
+            </div>
+			
+			<div>
+				<h2 class="dark-text"><a target="blank" href="https://www.youtube.com/watch?v=FRvNTdI0UoE"/>JSDAY Web Cryptography<a></h2>
+			</div>
+			
+			<div>
+				<h2 class="dark-text"><a target="blank" href="https://www.youtube.com/watch?v=--ZXExf-7nY"/>T3chfest 2015<a></h2>
+			</div>
+			
+			
+			</div>
+            
+        </div>
+    </section>
+    
+
+    <!-- FOOTER -->
+    <footer class="footer grey-bg">
+        ©2015
     </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/jmortega/jmortega.github.io/tarball/master" class="tar">tar</a><a href="https://github.com/jmortega/jmortega.github.io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
 
-  
+
+    <!-- =========================
+     SCRIPTS   
+    ============================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        /* PRE LOADER */
+        jQuery(window).load(function () {
+            "use strict";
+            jQuery(".status").fadeOut();
+            jQuery(".preloader").delay(1000).fadeOut("slow");
+        })
+    </script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--<script src="assets/js/jquery.nav.js"></script>-->
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/nivo-lightbox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/retina.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.videoBG.js"></script>
+
+    <!-- CUSTOM JS  -->
+    <script src="assets/js/custom.js"></script>
+
 </body>
+    
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="assets/js/ngbp-0.3.2.js"></script>
+
 </html>
