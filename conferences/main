@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Jose Manuel Orteg@ Site</title>
+	
+	<style>
+
+            /* Demo styles */
+            html,body{background:#222;margin:0;}
+
+            /* This rule is read by Galleria to define the gallery height: */
+            #galleria{height:520px}
+
+     </style>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="Jose Manuel Ortega Site">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Jose Manuel Ortega Site">
+    <meta name="twitter:description" content="Jose Manuel Ortega Site">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Jose Manuel Orteg@ Site">
+    <meta property="og:description" content="Jose Manuel Ortega Site">
+
+    <!--<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+	-->
+
+    <link rel="stylesheet" type="text/css" href="style.css?v=1.0.0" />
+
+    <link rel="canonical" href="http://jmortega.github.io" />
+
+</head>
+<body class="home-template no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover  " >
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="http://jmortega.github.io" title="link to homepage for Jose Manuel Ortega@ Site"><img src="http://storage.googleapis.com/k-avatars/33644001-012fa38b" width="80" alt="Jose Manuel Ortega developer" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="http://jmortega.github.io" title="link to homepage for Jose Manuel Ortega@ Site">José Manuel Orteg@</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">
+				In this site you can see conferences where i have been as speaker  
+			</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="#conferences" title="link to conferences" class="blog-button">Conferences</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+                  <!-- Twitter -->
+                  <li class="navigation__item">
+                    <a href="https://twitter.com/jmortegac" title="Twitter account">
+                      <i class='icon icon-social-twitter'></i>
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+              
+                  <!-- Google Plus -->
+                  <li class="navigation__item">
+                    <a href="https://plus.google.com/+JoseManuelOrtegadev" title="Google+ account">
+                      <i class='icon icon-social-google-plus'></i>
+                      <span class="label">Google-plus</span>
+                    </a>
+                  </li>
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="https://github.com/jmortega" title="Github account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  </li>
+              
+              
+              
+              
+                  <!-- LinkedIn -->
+                  <li class="navigation__item">
+                    <a href="https://www.linkedin.com/in/jmortega1" title="LinkedIn account">
+                      <i class='icon icon-social-linkedin'></i>
+                      <span class="label">LinkedIn</span>
+                    </a>
+                  </li>
+              
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+  <div class="main-post-list">
+
+    <ol class="post-list">
+	
+	 <li class="navigation__item">
+	 <a href="main" title="back">
+	 <i class='icon'></i>
+	 <span class="label2"><<</span>
+	 </a>
+       </li>
+	   
+	 
+				  
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="http://jmortega.soup.io" title="Conferences">Conferences</a></h2>
+		<br/>
+		
+		<div id="galleria">
+		
+			<a href="images/image5.jpg">
+                <img src="images/image5.jpg",data-big="images/image5.jpg">
+            </a>
+			
+            <a href="images/image1.jpg">
+                <img src="images/image1.jpg",data-big="images/image1.jpg">
+            </a>
+			
+			<a href="images/image2.jpg">
+                <img src="images/image2.jpg",data-big="images/image2.jpg">
+            </a>
+			
+			<a href="images/image3.jpg">
+                <img src="images/image3.jpg",data-big="images/image3.jpg">
+            </a>
+			
+			<a href="images/image4.jpg">
+                <img src="images/image4.jpg",data-big="images/image4.jpg">
+            </a>
+			
+			<a href="images/image6.jpg">
+                <img src="images/image6.jpg",data-big="images/image6.jpg">
+            </a>
+			
+			<a href="images/image7.jpg">
+                <img src="images/image7.jpg",data-big="images/image7.jpg">
+            </a>
+			
+			<a href="images/image8.jpg">
+                <img src="images/image8.jpg",data-big="images/image8.jpg">
+            </a>
+			
+			<a href="images/image9.jpg">
+                <img src="images/image9.jpg",data-big="images/image9.jpg">
+            </a>
+			
+			<a href="images/image10.jpg">
+                <img src="images/image10.jpg",data-big="images/image10.jpg">
+            </a>
+			
+			<a href="images/image11.jpg">
+                <img src="images/image11.jpg",data-big="images/image11.jpg">
+            </a>
+			
+			<a href="images/image12.jpg">
+                <img src="images/image12.jpg",data-big="images/image12.jpg">
+            </a>
+			
+			<a href="images/image13.png">
+                <img src="images/image13.png",data-big="images/image13.png">
+            </a>
+			
+			<a href="images/image14.png">
+                <img src="images/image14.png",data-big="images/image14.png	">
+            </a>
+			
+			<a href="images/jvm.png">
+                <img src="images/jvm.png",data-big="images/jvm.png">
+            </a>
+			
+			<a href="images/mobile.png">
+                <img src="images/mobile.png",data-big="images/mobile.png">
+            </a>
+			
+			<a href="images/seguridad1.png">
+                <img src="images/seguridad1.png",data-big="images/seguridad1.png">
+            </a>
+			
+			<a href="images/seguridad2.png">
+                <img src="images/seguridad2.png",data-big="images/seguridad2.png">
+            </a>
+			
+			<a href="images/seguridad3.png">
+                <img src="images/seguridad3.png",data-big="images/seguridad3.png">
+            </a>
+			
+			<a href="images/seguridad4.png">
+                <img src="images/seguridad4.png",data-big="images/seguridad4.png">
+            </a>
+			
+        </div>
+		
+		<br/><br/>
+		
+		<a href="https://youtu.be/hfaAA7ln-kc"><img src="images/seguridad1.png"></a>
+			
+		<hr class="post-list__divider" />
+		
+		<br/><br/>
+		
+
+		
+		<a href="https://youtu.be/j51H7P_3mNU"><img src="images/seguridad2.png"></a>
+			
+		<hr class="post-list__divider" />
+		
+		<br/><br/>
+		
+
+		
+		<a href="https://youtu.be/sLsTXW2aNXY"><img src="images/jvm.png"></a>
+			
+		<hr class="post-list__divider" />
+		
+		<br/><br/>
+		
+
+		
+		<a href="https://youtu.be/sLsTXW2aNXY"><img src="images/seguridad3.png"></a>
+			
+		<hr class="post-list__divider" />
+		
+		<br/><br/>
+		
+
+		
+		<a href="https://youtu.be/sLsTXW2aNXY"><img src="images/mobile.png"></a>
+			
+		<hr class="post-list__divider" />
+		
+		<br/><br/>
+		
+
+		
+		<a href="https://youtu.be/sLsTXW2aNXY"><img src="images/seguridad4.png"></a>
+			
+		<hr class="post-list__divider" />
+		
+		
+      </li>
+    </ol>
+
+    <hr class="post-list__divider " />
+
+<nav class="pagination" role="navigation">
+    <span class="pagination__page-number">Page 1 of 1</span>
+</nav>
+
+
+  </div>
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2015. All rights reserved.</span>
+                <span class="footer__copyright">Published with <a href="http://jmortega.github.io" title="website">jmortega.github.io</a></span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js?v="></script>
+
+    <script type="text/javascript" src="js/main.js?v=1.0.0"></script>
+    
+	<!-- load Galleria -->
+    <script src="js/galleria-1.4.2.min.js"></script>	
+	
+	<script>
+
+    // Load the classic theme
+    Galleria.loadTheme('js/galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria');
+
+    </script>	
+</body>
+</html>
