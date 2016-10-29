@@ -7,13 +7,13 @@
 
     <title>Jose Manuel Orteg@ Site</title>
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/galleria.min.js"></script>
-		
 	<style>
 
             /* Demo styles */
             html,body{background:#222;margin:0;}
+
+            /* This rule is read by Galleria to define the gallery height: */
+            #galleria{height:520px}
 
      </style>
 
@@ -148,7 +148,7 @@
         <h2 class="post-list__post-title post-title"><a href="http://jmortega.soup.io" title="Conferences">Conferences</a></h2>
 		<br/>
 		
-		<div class="galleria">
+		<div id="galleria">
 		
 			<a href="images/image5.jpg">
                 <img src="images/image5.jpg",data-big="images/image5.jpg">
@@ -394,12 +394,16 @@
     <script type="text/javascript" src="js/main.js?v=1.0.0"></script>
     
 	<!-- load Galleria -->
-     <script>
-	(function() { 
-            Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.4.5/themes/classic/galleria.classic.min.js');
-            Galleria.run('.galleria');
-        }());
+    <script src="js/galleria.min.js"></script>	
+	
+	<script>
+
+    // Load the classic theme
+    Galleria.loadTheme('js/galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria');
+
     </script>	
-		
 </body>
 </html>
