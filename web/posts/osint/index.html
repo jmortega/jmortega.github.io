@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jose Manuel Ortega,Python, security">
+
+        <link rel="alternate"  href="info.xml" type="application/atom+xml" title="Jose Manuel Ortega Full Atom Feed"/>
+
+        <title>Jose Manuel Ortega // Python, security</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pure.css">
+    <link rel="stylesheet" href="https://vjs.zencdn.net/4.12/video-js.css" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.0.1/jquery.fitvids.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".content").fitVids();
+        });
+    </script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar sidebar-article pure-u">
+        <header class="header-article">
+            <hgroup>
+                <h5>Published</h5>
+                <p>November 2016</p>
+                <a href="http://jmortega.github.io/web/index.html">&larr;Home</a>
+            </hgroup>
+        </header>
+    </div>
+    <div class="pure-u">
+        <div class="content">
+            <section class="post">
+                <header class="post-header">
+                    <h1>OSINT tools for security auditing</h1>
+                        <p class="post-meta">
+                             <a class="post-category">osint</a>
+                        </p>
+                </header>
+            </section>
+            <p>
+The talking points could be:
+</p>
+<ul>
+<li>Introduction searching information from multiples sources with OSINT tools.</li>
+<li>OSINT tools developed with python for extracting public information from servers and domains.</li>
+<li>Advantages and limitations these tools from the user point of view.</li>
+<li>Comment how these tools are developed and the main modules used in their development.</li>
+</ul>
+Some of the tools to comment are:
+
+<ul>
+<li>Shodan Python API as search engine server information. </li>
+<li>Tinfoleak and Tweepy as Python scripts for data extraction on twitter.</li>
+<li>SpiderFoot as a tool for extract information from multiple sources. </li>
+<li>the Harvester as Python script for extracting emails and hostnames in a particular domain.</li>
+</ul>
+
+
+	    
+</div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

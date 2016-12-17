@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Jose Manuel Ortega Candel</title>
+<link href="https://justinmayer.com/" rel="alternate"></link>
+<link href="https://justinmayer.com/feeds/all.atom.xml" rel="self"></link>
+<id>https://jmortega.github.io</id><updated>2016-15-12</updated><entry>
+<title>OSINT tools for security auditing</title>
+<link href="https://jmortega.github.io/web/posts/osint/" rel="alternate"></link>
+<published>2016-15-12</published>
+<summary type="html">
+The talk would aim about making an introduction to open source intelligence automation tools(OSINT) developed in Python, commenting the process we can follow to obtain, analyze and exploit public information in social networks and public servers.The final objective is obtain the maximum possible of knowledge in the context we are auditing.
+</summary><content type="html"></content>
+<category term="python">
+</category>
+<category term="speaking">
+</category>
+</entry></feed>

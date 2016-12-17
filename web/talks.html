@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jose Manuel Ortega ,Python, security">
+
+        <link rel="alternate"  href="info.xml" type="application/atom+xml" title="Jose Manuel Ortega Full Atom Feed"/>
+
+        <title>Jose Manuel Ortega // Python, security</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://vjs.zencdn.net/4.12/video-js.css" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+<div class="sidebar pure-u">
+    <div class="cover-img" style="background-image: url('img2.png')">
+        <div class="cover-body">
+            <header class="header">
+                <hgroup>
+                    <h1 class="brand-main"><a href="http://jmortega.github.io">Jose Manuel Ortega</a></h1>
+                    <p class="tagline">Python, security</p>
+                    <p class="links"><a href="index.html">Archive</a></p>
+                    <p class="links"><a href="talks.html">Talks</a></p>
+                    <p class="links"><a href="https://about.me/jmortegac/">About</a></p>
+                    <p class="social">
+                        <a href="https://twitter.com/jmortegac">
+                            <i class="fa fa-twitter-square fa-3x"></i>
+                        </a>
+                        <a href="https://github.com/jmortega/">
+                            <i class="fa fa-github fa-3x"></i>
+                        </a>
+                        <a href="info.xml">
+                            <i class="fa fa-rss fa-3x"></i>
+                        </a>
+                    <p>
+                </hgroup>
+            </header>
+        </div>
+    </div>
+</div>    <div class="pure-u-1">
+        <div class="content">
+            <h1 class="content-subhead">Talks</h1>
+            <p><p>I’ve had the honor of speaking at Europython, PyConEs, Codemotion, JavaConf, T3chfest, JsDay and PyData and in Spain, Holland, and Ireland.</p>
+<h3>Recent&nbsp;talks</h3>
+<ul>
+<li><a href="http://es.slideshare.net/jmoc25/webscraping-with-asyncio">WebScraping with asyncio</a> — November,&nbsp;2016</li>
+<li><a href="http://es.slideshare.net/jmoc25/testing-nodejs-security">Testing NodeJS Security</a> — November,&nbsp;2016</li>    
+<li><a href="http://es.slideshare.net/jmoc25/osint-tools-for-security-auditing-with-python">OSINT tools for security auditing</a> — October,&nbsp;2016</li>
+</ul></p>
+        </div>
+    </div>
+</div>
+<script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

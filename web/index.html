@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jose Manuel Ortega , Python, security">
+
+        <link rel="alternate"  href="https://justinmayer.com/feeds/all.atom.xml" type="application/atom+xml" title="Jose Manuel Ortega Full Atom Feed"/>
+
+        <title>Jose Manuel Ortega // Python, security</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://vjs.zencdn.net/4.12/video-js.css" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+<div class="sidebar pure-u">
+    <div class="cover-img" style="background-image: url('img2.png')">
+        <div class="cover-body">
+            <header class="header">
+                <hgroup>
+                    <h1 class="brand-main"><a href="http://jmortega.github.io">Jose Manuel Ortega</a></h1>
+                    <p class="tagline">Jose Manuel Ortega , Python, security</p>
+                    <p class="links"><a href="index.html">Archive</a></p>
+                    <p class="links"><a href="talks.html">Talks</a></p>
+                    <p class="links"><a href="https://about.me/jmortegac/">About</a></p>
+                    <p class="social">
+                        <a href="https://twitter.com/jmortegac">
+                            <i class="fa fa-twitter-square fa-3x"></i>
+                        </a>
+                        <a href="https://github.com/jmortega/">
+                            <i class="fa fa-github fa-3x"></i>
+                        </a>
+                        <a href="info.xml">
+                            <i class="fa fa-rss fa-3x"></i>
+                        </a>
+                    <p>
+                </hgroup>
+            </header>
+        </div>
+    </div>
+</div>    
+    <div class="pure-u-1">
+        <div class="content">
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">
+                            Latest posts
+                </h1>
+                <section class="post">
+                    <header class="post-header">
+                        <h3><a class="post-title" href="posts/osint/">OSINT tools for security auditing</a></h3>
+                        <p class="post-meta"><p>The talk would aim about making an introduction to open source intelligence automation tools(OSINT) developed in Python, commenting the process we can follow to obtain, analyze and exploit public information in social networks and public servers.The final objective is obtain the maximum possible of knowledge in the context we are auditing.</p></p>
+                        <p class="post-meta">PyConES Conference <a href="http://2016.es.pycon.org">link</a> &middot; October 2016</p>
+                    </header>
+                </section>
+            
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
