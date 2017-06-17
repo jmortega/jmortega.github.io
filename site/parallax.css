@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+	min-width: 980px;
+	padding: 0;
+}
+
+p{
+	margin: 0 0 20px 0;	
+}
+
+p, ul{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size-adjust:0.488;
+	font-weight:200;
+	font-style:normal;
+}
+
+img{
+	border: 0;
+}
+
+h1, #pixels{
+	font-family:"Convergence", Arial, Helvetica, sans-serif;
+	font-size-adjust:0.40;
+	font-weight:700;
+	font-style:normal;
+}
+
+h2{
+	font-family:"Convergence", Arial, Helvetica, sans-serif;
+	font-size-adjust:0.531;
+	font-weight:500;
+	font-style:normal;
+}
+
+#header h1{
+	color: #48941A;
+}
+
+.left{
+	float: left;	
+	margin: 0 0 0 20px;
+}
+
+.right{
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.center{
+	font-size: 2.5em;
+	padding: 80px 0;
+	text-align: center;
+}
+
+#nav{
+	list-style: none;
+	position: fixed;
+	right: 20px;
+}
+
+#nav li{
+	margin: 0 0 15px 0;	
+}
+
+#header, #intro, #second{
+	width: 100%;
+}
+
+#header{
+	background: white;
+	height: 130px;	
+}
+
+#one{
+	background:url(images/colour.jpg) 50% 0 no-repeat fixed;
+	color: #FFF;
+	height: 600px;
+	margin: 0;
+	padding: 160px 0 0 0;
+}
+
+#two{
+	background: url(images/cloud.jpg) 50% 0 no-repeat fixed;
+	color: #FFF;
+	height: 1300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+
+#two .bg{
+	background: url(images/cBall.png) 20% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+	z-index: 200;
+}
+
+#three{
+	background: url(images/golf.jpg) 50% 0 no-repeat fixed;
+	color: #FFF;
+	height: 650px;
+	padding: 100px 0 0 0;	
+}
+
+#four{
+	background: url(images/bubbles2.png), url(images/bubbles2.png), url(images/bubbles1.png), url(images/track.jpg);
+	background-position: 50% 0, 50% 0, 50% 0, 50% 0;
+	background-attachment: fixed;
+	background-repeat: repeat, repeat, repeat ,no-repeat;
+	color: #FFF;
+	height: 1300px;
+	padding: 100px 0 0 0;
+}
+
+#five{
+	background: #ccc;
+	height: 1000px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+}
+
+.content{
+	margin: 0 auto;
+	min-width: 980px;
+	width: 980px;
+}
+
+.content .left, .content .right{
+	padding: 100px 0 0 0;
+	position: relative;
+	width: 350px;	
+}

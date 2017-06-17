@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Jose Manuel Ortega.Python Java Security Conferences</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Scrollable Thumbs Menu" />
+        <meta name="keywords" content="scrolling, jquery, vertical, thumbs, menu, navigation"/>
+        <link rel="stylesheet" href="css/style6.css" type="text/css" media="screen"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-family:Arial;
+                padding:0px;
+                margin:0px;
+                background:#000 url(images/cover.png) no-repeat top right;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <ul class="menu" id="menu">
+			
+			<a href="index.html">Back</a>
+                <li>
+                    <a href="#">Conferences</a>
+
+                    <div class="sc_menu_wrapper">
+                        <div class="sc_menu">
+                            <a href="#"><img src="images/1.png" alt=""/></a>
+                            <a href="#"><img src="images/2.png" alt=""/></a>
+                            <a href="#"><img src="images/3.png" alt=""/></a>
+                            <a href="#"><img src="images/4.png" alt=""/></a>
+                            <a href="#"><img src="images/5.png" alt=""/></a>
+                            <a href="#"><img src="images/6.png" alt=""/></a>
+                            <a href="#"><img src="images/7.png" alt=""/></a>
+                            <a href="#"><img src="images/8.png" alt=""/></a>
+			    <a href="#"><img src="images/9.png" alt=""/></a>
+                            <a href="#"><img src="images/10.png" alt=""/></a>
+                            <a href="#"><img src="images/11.png" alt=""/></a>
+                            <a href="#"><img src="images/12.png" alt=""/></a>
+                            <a href="#"><img src="images/13.png" alt=""/></a>
+                            <a href="#"><img src="images/14.png" alt=""/></a>
+                            <a href="#"><img src="images/15.png" alt=""/></a>
+                            <a href="#"><img src="images/16.png" alt=""/></a>
+			    <a href="#"><img src="images/17.png" alt=""/></a>
+                            <a href="#"><img src="images/18.png" alt=""/></a>
+                            <a href="#"><img src="images/19.png" alt=""/></a>
+                            <a href="#"><img src="images/20.png" alt=""/></a>
+                            <a href="#"><img src="images/21.png" alt=""/></a>
+                            <a href="#"><img src="images/22.png" alt=""/></a>
+                            <a href="#"><img src="images/23.png" alt=""/></a>
+                            <a href="#"><img src="images/24.png" alt=""/></a>
+			    <a href="#"><img src="images/25.png" alt=""/></a>
+                            <a href="#"><img src="images/26.png" alt=""/></a>
+                            <a href="#"><img src="images/27.png" alt=""/></a>
+                        </div>
+                    </div>
+                </li>
+				
+            </ul>
+		
+                    
+				
+
+        </div>
+        <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                /* function to make the thumbs menu scrollable */
+                function buildThumbs($elem){
+                    var $wrapper    	= $elem.next();
+                    var $menu 		= $wrapper.find('.sc_menu');
+                    var inactiveMargin 	= 150;
+                    /* move the scroll down to the
+                    beggining (move as much as the height of the menu) */
+                    $wrapper.scrollTop($menu.outerHeight());
+                    
+                    /* when moving the mouse up or down, the wrapper moves (scrolls) up or down */
+                    $wrapper.bind('mousemove',function(e){
+                        var wrapperHeight 	= $wrapper.height();
+                        var menuHeight 	= $menu.outerHeight() + 2 * inactiveMargin;
+                        var top 	= (e.pageY - $wrapper.offset().top) * (menuHeight - wrapperHeight) / wrapperHeight - inactiveMargin;
+                        $wrapper.scrollTop(top+10);
+                    });
+                }
+                
+                var stacktime;
+				
+                $('#menu li > a').bind('mouseover',function () {
+                    var $this = $(this);
+					
+                    buildThumbs($this);
+					
+                    var pos	=	$this.next().find('a').size();
+                    var f	=	function(){
+                        if(pos==0) clearTimeout(stacktime);
+                        $this.next().find('a:nth-child('+pos+')').css('visibility','visible');
+                        --pos;
+                    };
+                    /* each thumb will appear with a delay */
+                    stacktime = setInterval(f , 50);
+                });
+                
+                /* on mouseleave of the whole <li> the scrollable area is hidden */
+                $('#menu li').bind('mouseleave',function () {
+                    var $this = $(this);
+                    clearTimeout(stacktime);
+                    $this.find('.sc_menu').css('visibility','hidden').find('a').css('visibility','hidden');
+                    $this.find('.sc_menu_wrapper').css('visibility','hidden');
+                });
+                
+                /* when hovering a thumb, change its opacity */
+                $('.sc_menu a').hover(
+                function () {
+                    var $this = $(this);
+                    $this.find('img')
+                    .stop()
+                    .animate({'opacity':'1.0'},400);
+                },
+                function () {
+                    var $this = $(this);
+                    $this.find('img')
+                    .stop()
+                    .animate({'opacity':'0.3'},400);
+                }
+            );
+            });
+        </script>
+    </body>
+</html>

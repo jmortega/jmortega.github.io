@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Jose Manuel Ortega.Python Java Security Conferences</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+        <meta name="description" content="Experimental Page Layout Inspired by Flipboard" />
+        <meta name="keywords" content="flip, pages, flipboard, layout, responsive, web, web design, grid, ipad, jquery, css3, 3d, perspective, transitions, transform" />
+        <meta name="author" content="" />
+        <link rel="shortcut icon" href="favicon.ico"> 
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.08464.js"></script>
+		<script id="pageTmpl" type="text/x-jquery-tmpl">
+			<div class="${theClass}" style="${theStyle}">
+				<div class="front">
+					<div class="outer">
+						<div class="content" style="${theContentStyleFront}">
+							<div class="inner">{{html theContentFront}}</div>
+						</div>
+					</div>
+				</div>
+				<div class="back">
+					<div class="outer">
+						<div class="content" style="${theContentStyleBack}">
+							<div class="inner">{{html theContentBack}}</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</script>
+    </head>
+    <body>
+		
+		<header class="main-title">
+			<h1>Jose Manuel Ortega</strong></h1>
+			<p>Security Researcher && Software Engineer </p>
+			<p><strong>Best viewed in a Webkit browser (Safari, Chrome)</strong></p>
+		
+			
+		</header>
+		
+		<div id="flip" class="container">
+		
+			<div class="f-page f-cover">
+				<div class="cover-elements">
+					<div class="logo">
+					</div>
+					<h1>Jose Manuel Ortega <span><a href="https://jmortegac.wixsite.com/conferences">Security Researcher && Software Engineer</a></span></h1>
+				</div>
+				<div class="f-cover-flip">&lt; Go</div>
+			</div>
+			
+			<div class="f-page">
+				<div class="f-title">
+					<h2></h2>
+					<a href="https://jmortegac.wixsite.com/conferences/conferences">Conferences</a>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-2"></div>
+					<h3>OSINT Tools for Security Auditing</span></h3>
+					<p>The talk would aim about making an introduction to open source intelligence automation tools(OSINT) developed in Python, commenting the process we can follow to obtain, analyze and exploit public information in social networks and public servers.The final objective is obtain the maximum possible of knowledge in the context we are auditing.
+​<br/>
+The talking points could be:<br/>
+​
+-Introduction searching information from multiples sources with OSINT tools.<br/>
+-OSINT tools developed with python for extracting public information from servers and domains.<br/>
+-Advantages and limitations these tools from the user point of view.<br/>
+-Comment how these tools are developed and the main modules used in their development.<br/>
+​
+Some of the tools to comment are:
+-Censys and Shodan Python API as search engine server information. <br/>
+-SpiderFoot and recon-ng as a tools for extracting information from multiple sources and automate the footprinting process. -the Harvester as Python script for extracting emails and hostnames in a particular domain.
+-Osrframework and Maltego OSINT visualisation tool<br/>
+-Libraries and modules for collecting information from Tor and ZeroNet networks<br/>
+-Tinfoleak and Tweepy as Python scripts for data extraction on twitter.<br/>
+-FullContact API for obtain social networks profiles associated with an email address.</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-3"></div>
+					<h3>Footprinting for security auditors</span></h3>
+					<p>Footprinting is one of the most important techniques security auditing, since allows them gather information about the target we are analysing.
+​<br/>
+In the process to collect information about our target we can diferentiate two phases,the first one is where we obtain public information without interact with the objective and the second one is where we can use tools such as port scanning.
+In the process to collect information about our target we can diferentiate two phases, the first one is the passive where we obtain public information about our target without interact with the objective and the second one is the phase where we can use tools such as port scanning or banner grabbing.
+​<br/>
+These could be the talking points:<br/>
+​
+1.Introduction to footprinting <br/> I will comment the main footprinting phases:<br/>
+ <br/>
+Passive Footprinting where we collect public information and building a map of the server or domain objective, without interacting directwith it.
+​<br/>
+Active Footprinting where there is an active target identification through and techniques such as port scanning, and different identifications of services, operating systems and server banners.
+​<br/><br/>
+2.Footprinting tools<br/>
+For applying footprinting techniques we can use tools for obtain domain information such as whois,apply inverse querys from DNS and name servers. Also we can use third services such as robtex and serversniff for obtain more information. We can use public information sources,between these tools we can highlight shodan,scans,zmap and censys
+​<br/><br/>
+3.Port scanning with nmap<br/>
+With nmap we can check ports open for a target ip or domain and with nmap scripts we can check vulnerabilities in open ports For example,if the mysql port is opened,check if the server has some vulnerability relationed with this service.I will show nmap scripts for checking this vulnerabilities.</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-4"></div>
+					<h3>Testing NodeJS Security</span></h3>
+					<p>NodeJS es una de las plataformas de más rápido crecimiento hoy en día y desde el punto de vista de la seguridad en necesario conocer todas las posibilidades que ofrece la plataforma para los desarrolladores. Esta charla tratará de cómo proteger las aplicaciones express en términos de autenticación, middleware, y las mejores prácticas antes de subirla a producción.
+​<br/><br/>
+Los puntos a tratar podrían ser:<br/>
+-Estado de la seguridad en NodeJS<br/>
+-Comentar las principales vulnerabilidades a través del proyecto OWASP NodeGoat<br/>
+-Herramientas para proteger nuestras aplicaciones de las principales vulnerabilidades como SQL injection,XSS</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-5"></div>
+					<h3>Webscraping With Asyncio</span></h3>
+					<p>If we want to extract the contents of a website automating information extraction, often we find that the website does not offer any API to get the data you need and it is necessary use scraping techniques to recover data from a Web automatically. Some of the most powerful tools for extracting the data in web pages can be found in python ecosystem.
+<br/>
+1.Introduction to webscraping and python tools
+Some of the most powerful tools to extract data can be found in the python ecosystem, among which we highlight Beautiful soup, Pyquery and Scrapy.
+<br/><br/>
+2.Asyncio with aiohttp for asyncronous requests<br/>
+I will make an introduction to asyncio and aiohttp modules explaining the basic concepts like coroutines and event loops and try to compare them with requests module. The most important is understand why the union asyncio + aiohttp has a better performance than requests module.
+<br/>
+3.Asynchronous scraping data<br/>
+I will show an example integrating some of the scraping tools commented before like BeautifulSoup or Scrapy with asyncio + aiohttp and obtain the performance improvement comparing with Requests module.</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-8"></div>
+					<h3>Testing Android Security</span></h3>
+					<p>The talk would aim to give an overview of the tools we have to increase the security of applications before publishing them on the market or distribute the apk.
+ <br/><br/>
+These could be talking points:<br/>
+-Static and dynamic analysis application code for detecting potential vulnerabilities.<br/>
+-Development security in android components<br/>
+-New permissions model from version 6 where the user can allow or deny permissions in runtime<br/>
+-Libraries that allow encrypted data, for example SQLCipher to encrypt a SQLite database or to encrypt xml preferences files like securePreferences</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-7"></div>
+					<h3>Ethical hacking with Python tools</span></h3>
+					<p>Python, as well as offering an ecosystem of tools for testing security and application pentesting.Python offers a tool ecosystem for developing our own tools security for testing applications and the servers security,identifying information about servers and potential vulnerabilities. The ultimate objective is show a pentesting tool integrating some of the modules commented and try a demo showing info about our domain target and find vulnerabilities in it
+ <br/>
+Nowdays, Python is the language more used for developing tools within the field of security. Many of the tools can be found today as port scanner, vulnerability analysis, brute force attacks and hacking of passwords are written in python. The goal of the talk would show the tools available within the Python API and third-party modules for developing our own pentesting and security tools and finally show a pentesting tool integrating some of the modules.
+ <br/>
+The main topics of the talk could include:
+ <br/>
+1.Enter Python language as platform for developing security tools
+ <br/>
+Introduction about the main libraries we can use for introducing in development of security tools such as socket and requests.
+​<br/>
+2.Libraries for obtain servers information such as Shodan, pygeocoder,pythonwhois
+ <br/>
+Shodan is a search engine that lets you find specific computers (routers, servers, etc.) and get information about ports and services that are opened.
+ <br/>
+3.Analysis and metadata extraction in Python for images and documents
+ <br/>
+Show tools for scraping web data and obtain metadata information in documents and images
+ <br/>
+4.Port scanning with tools like python-nmap
+ <br/>
+With python-nmap module we can check ports open for a target ip or domain.
+ <br/>
+5.Check vulnerabilities in FTP and SSH servers</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-7"></div>
+					<h3>Hacking ético con herramientas Python</span></h3>
+					<p>El objetivo de la charla sería mostrar las herramientas que disponemos dentro de la propia API de Python y librerías de terceros para desarrollar nuestras propias herramientas que permitan realizar pruebas de seguridad y de pentesting de las aplicaciones.
+  <br/> <br/>
+Python se ha convertido en el lenguaje más usado para desarrollar herramientas dentro del ámbito de la seguridad. Muchas de las herramientas que podemos encontrar hoy en día como escáner de puertos, análisis de vulnerabilidades, ataques por fuerza bruta y hacking de passwords, se han escrito en este lenguaje ,además de ofrecer un ecosistema de herramientas para realizar pruebas de seguridad y de pentesting de aplicaciones.
+  <br/>
+Entre los puntos a tratar podríamos destacar:
+  <br/>
+**Introducir Python como lenguaje de desarrollo de herramientas de seguridad <br/>
+**Introducir librerías para obtener información de nuestro objetivo como Shodan,pygeocoder,pygeoip <br/>
+**Análisis y extracción de metadatos en Python en imágenes y documentos <br/>
+**Análisis de puertos con herramientas como python-nmap</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-9"></div>
+					<h3>Python tools for webscraping</span></h3>
+					<p>If we want to extract the contents of a website automating information extraction, often we find that the website does not offer any API to get the data you need and It is necessary use scraping techniques to recover data from a Web automatically. Some of the most powerful tools for extracting the data in web pages can be found in the python ecosystem.
+ <br/> <br/>
+Introduction to webscraping
+ <br/>
+WebScraping is the process of collecting or extracting data from web pages automatically. Nowdays is a very active field and developing shared goals with the semantic web field, natural language processing,artificial intelligence and human computer interaction.
+​<br/>
+Python tools for webscraping
+​<br/>
+Some of the most powerful tools to extract data can be found in the python ecosystem, among which we highlight Beautiful soup, Webscraping, PyQuery and Scrapy.
+ <br/>
+Comparison between webscraping tools
+ <br/>
+A comparison of the mentioned tools will be made, showing advantages and disadvantages of each one,highlighting the elements of each one to perform data extraction as regular expressions,css selectors and xpath expressions.
+ <br/>
+Project example with scrapy
+ <br/>
+Scrapy is a framework written in python for extraction automated data that can be used for a wide range of applications such as data mining processing. When using Scrapy we have to create a project, and each project consists of:
+ <br/>
+1.Items: We define the elements to be extracted.<br/>
+2.Spiders: The heart of the project, here we define the extract data procedure.<br/>
+3.Pipelines: Are the proceeds to analyze elements: data validation, cleansing html code<br/>
+ 
+Outline
+  <br/>
+Introduction to webscraping(5 min)
+  <br/>
+I will mention the main scraping techniques <br/> <br/>
+1.1.WebScraping <br/>
+1.2.Screen scraping <br/>
+1.3.Report mining <br/>
+1.4.Spiders <br/> <br/>
+ 
+Python tools for webscraping(10 min) <br/>
+For each library I will make and introduction with a basic example. In some examples I will use requests library for sending HTTP requests <br/>
+2.1. BeautifulSoup <br/>
+2.2. Webscraping <br/>
+2.3. PyQuery <br/> <br/>
+ 
+Comparing scraping tools(5 min) <br/> <br/>
+ 
+3.1.Introduction to techniques for obtain data from web pages like regular expressions,css selectors, xpath expressions <br/>
+3.2.Comparative table comparing main features of each tool <br/> <br/>
+ 
+Project example with scrapy(10 min) <br/>
+4.1.Project structure with scrapy <br/>
+4.2.Components(Scheduler,Spider,Pipeline,Middlewares) <br/>
+4.3.Generating reports in json,csv and xml formats</p>
+				</div>
+			</div>
+			
+			<div class="f-page">
+				<div class="f-title">
+					<h2></h2>
+					<a href="https://jmortegac.wixsite.com/conferences/conferences">Conferences</a>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-10"></div>
+					<h3>Python para desarrolladores web</span></h3>
+					<p>La charla tendría como objetivo dar a conocer qué herramientas se disponen a nivel de desarrollo web dentro del ecosistema de Python.
+A nivel de frameworks de desarrollo se comentarán los más destacados (Django,Flask,Pyramid), comentando cuál es el más adecuado dependiendo del tipo de proyecto.
+​<br/>
+A nivel de herramientas de extracción de datos de páginas web, se comentarán librerías de scraping que permiten automatizar este proceso como beatifulsoup, scrapy.
+​<br/>
+A nivel de visualización de datos también podemos encontrar librerías interesantes como Bokeh.
+​<br/>
+Por último, se comentará cómo se pueden acceder a APIs de servicios web desde Python.</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-14"></div>
+					<h3>Comparing Python ORM</span></h3>
+					<p>El objetivo de la charla es mostrar algunos de los sistemas ORM que podemos encontrar dentro del ecosistema de Python como Sqlalchemy, Storm, Sqlobject, Django ORM,realizando una comparativa entre ellos,mostrando ventajas y desventajas de cada uno.
+​​<br/>​<br/>
+Algunas de las características a comparar son performance, eficiencia, tratamiento de caché, consultas.
+​​<br/>
+Por ultimo, se comentarán las ventajas que aportan estos sistemas para la seguridad de la aplicaciones web con Django.</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-15"></div>
+					<h3>Seguridad y criptografía en Python</span></h3>
+					<p>La charla tendrá como objetivo introducir la criptografía y la seguridad desde el punto de vista del desarrollador, mostrando maneras de cifrar la información con scripts de Python y la información más sensible en aplicaciones web usando Django,comentando la principales vulnerabilidades que podemos encontrar en un sitio web(SQL injection,XSS, CSRF) y cómo Django nos puede ayudar a evitar ataques que se aprovechen de estas vulnerabilidades.</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-12"></div>
+					<h3>Testing Android Security</span></h3>
+					<p>La charla tendría como objetivo de dar una visión global de las herramientas que tenemos para aumentar la seguridad de las aplicaciones antes de publicarlas en el market o distribuir el apk,en este caso centrándonos en la plataforma Android.<br/><br/> -Análisis de código estático y dinámico de las aplicaciones para detectar posibles vulnerabilidades
+ ​​<br/>​​<br/>
+-Desarrollo seguro en android(permisos,Content providers,webview,shared preferences,sql,librerías de terceros)​​<br/>
+-Comentar librerías que permitan cifrar los datos,por ejemplo SQLCipher para cifrar una base de datos SQlite o securePreferences para cifrar los ficheros de preferencias de usuario​​<br/>
+-Comentar algunos de los riesgos de seguridad que podemos encontrar en las aplicaciones según la guías Owasp Mobile top risks Security​​<br/>
+-Encriptación de datos​​<br/>
+-Ofuscación de las aplicaciones​​<br/>
+-Introducción al pentesting de aplicaciones y análisis forense</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-16"></div>
+					<h3>Seguridad en dispositivos móviles</span></h3>
+					<p>Durante esta sesión se ofrece una visión global de la seguridad a nivel de dispositivos y aplicaciones en sistemas iOS y Android, tanto desde el punto de vista del usuario como del desarrollador. CONTENIDOS
+​<br/><br/>
+1. Situación actual.<br/>
+ <br/>
+2. Seguridad en aplicaciones Android e iOS (permisos, certificados). Para cada plataforma se verá cómo funciona el sistema de permisos y como se distribuyen las aplicaciones en los respectivos markets.
+ <br/>
+3. Prevención y detección de malware. Se verán algunas herramientas que nos puedan ayudar a prevenir que nuestro dispositivo se infecte y detectarlo en caso de que hayamos sido infectados.
+ <br/>
+4. Análisis de malware en Android.
+ <br/>
+5. Phishing en aplicaciones móviles. Breve introducción al phising y algunos consejos para evitar que como usuarios nos engañen con aplicaciones falsas.
+​<br/>
+6. Riesgos en aplicaciones móviles.
+ <br/>
+7. Buenas prácticas de desarrollo seguro.</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-18"></div>
+					<h3>Comparing JVM Languages</span></h3>
+					<p>Nowdays there are more than two hundred languages working in JVM. It's commonly called polyglot programming in JVM ecosystem. This talk will try make an introductory look at several JVM languages, including Java 8, Scala, Groovy, Clojure, Celylon and Kotlin.
+  <br/> <br/>
+I will compare them showing benefits and drawbacks each one. Some features I will compare are: Performance, Type checking(Static vs Dinamic), Functional principles, Collections and data structures, Semantics and Security.</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-17"></div>
+					<h3>Python Security & Cryptography</span></h3>
+					<p>The talk would aim to introduce cryptography and security from the developer point of view, showing ways to encrypt information with Python scripts and more sensitive information in web applications using django.
+ <br/><br/>
+I will introduce to security in python ,showing some libraries that allow encryption and decryption like PyCrypto or M2Crypto,comparing theses libraries with the cryptography module.At the same time,I will show the main ciphers and hashing algorithms used in these libraries like AES,DES,RSA and some examples illustrating each case.I wil show other techniques like steganography for hiding information in files(images,documents,programs) with some libraries like Stepic or ezPyCrypto.
+ <br/>
+Finally,I will comment OWASP Python Security Project where we can find some useful practices and secure coding guidelines for detecting potential security vulnerabilities in our applications like SQL injection or Cross-site scripting.</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-19"></div>
+					<h3>Web Cryptography</span></h3>
+					<p>La charla tendría como objetivo introducir la criptografía desde el punto del vista del desarrollador ,mostrando formas de cifrar la información con javascript en la parte cliente de una aplicación web.
+ <br/> <br/><br/><br/>
+Los puntos a tratar podrían ser:
+ <br/> <br/> <br/>
+-Introducción a la seguridad en aplicaciones web(Autenticación,Autorización,Confidencialidad) <br/>
+-Encriptado y desencriptado de la información con javascript <br/>
+-Web Cryptography API y soporte para navegadores <br/>
+-Librerías que permiten usar la mayoría de los algoritmos de cifrado(CryptoJS,SJCL) <br/>
+-Seguridad en aplicaciones web,comentado posibles vulnerabilidades que podemos encontrar según la guía OWASP <br/>
+-Buenas prácticas de programación <br/> <br/>
+
+Keywords: Seguridad,cifrado,librerías,javascript</p>
+				</div>
+	
+			</div>
+			
+			<div class="f-page">
+				<div class="f-title">
+					<h2></h2>
+					<a href="https://jmortegac.wixsite.com/conferences/conferences">Conferences</a>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-20"></div>
+					<h3>Mobile Backend as a Service (MBaaS)</span></h3>
+					<p>La charla trataría de dar una introducción a los servicios en la nube que se pueden utilizar para persistir los datos de nuestras aplicaciones móviles
+ <br/><br/><br/><br/>
+Los puntos a tratar podrían ser:
+​<br/><br/>
+- Introducción a la persistencia en dispositivos móviles<br/>
+- Arquitectura MBaaS - Servicios de persistencia en la nube<br/>
+- Push Notifications<br/>
+- Google Cloud Messaging<br/>
+- Ventajas y desventajas de estas plataformas<br/>
+- API REST<br/>
+- Demostración usando la API de algunas de las plataformas que ofrece estos servicios como Parse<br/></p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-22"></div>
+					<h3>Android in Practice</span></h3>
+					<p>Este taller está enfocado a conocer de forma práctica todas aquellas herramientas que todo desarrollador en Android debería conocer. Tomaremos un proyecto de ejemplo al cual le añadiremos algunas funcionalidades tales como geolocalización y bases de datos. Los conocimientos de los asistentes deben ser:<br/><br/>
+- Conocimientos básicos de programación orientada a objetos y de Java.<br/>
+-JDK de Oracle: http://www.oracle.com/technetwork/jav...<br/>
+-Eclipse + Plugin ADT: https://developer.android.com/intl/es...<br/>
+ 
+-También se puede descargar el ADT bundle: https://developer.android.com/intl/es...<br/>
+ 
+-Código fuente de GitHub: https://github.com/jmortega/android<br/>
+ 
+-Cuenta de Gmail y acceso a la cuenta https://cloud.google.com/console para la generación de claves.<br/>
+ 
+-Cuenta de desarrollador de Instagram: http://instagram.com/developer/</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-23"></div>
+					<h3>Desarrollo de aplicaciones móviles multiplataforma</span></h3>
+					<p>En los últimos años han aumentado las herramientas para desarrollar en dispositivos móviles como alternativa a hacerlo de forma nativa.
+<br/><br/>
+FrameWorks como Phonegap,Appcelerator Titanium,SenchaTouch,Jquery mobile permiten desarrollar aplicaciones híbridas y ofrecen nuevas posibilidades a los desarrolladores que conozcan HTML,CSS y JavaScript
+<br/>
+En la charla se hará una breve introducción a cada uno de ellos y comentaré código y ejemplos de aplicaciones realizadas con los frameworks mencionados.<br/>
+<a href="https://web.archive.org/web/20130913021804/http://codemotion.es:80/talk/18-october/54"><font color="blue">Link</font></a><br/>
+<a href="http://librosweb.es/eventos/codemotion-madrid-2013/desarrollo-de-aplicaciones-moviles-multiplataforma/"><font color="blue">Presentation</font></a>
+
+</p>
+				</div>
+				<div class="box w-25 h-70">
+					<div class="img-cont img-11"></div>
+					<h3>Hacking ético con herramientas python</span></h3>
+					<p>Jose Manuel Ortega,es un gran experto en Python, que recorrió en bastante detalle las librerías que sirven para hacer análisis de seguridad, así como ciertos elementos (plugins, otros productos con APIs, etc.) que permiten ser utilizados desde Python.
+<br/>
+También presentó su propia herramienta, disponible en Github, con la que ha automatizado muchas de las tareas habituales en este tipo de análisis. Una charla de un alto nivel técnico, que pudieron aprovechar en toda su totalidad solamente las personas se que desenvolvían con soltura en el arte de la programación.</p>
+<a href="http://www.cantabriatic.com/sh3llcon-2016/"><font color="blue">Link</font></a>
+				
+				</div>
+			
+	
+			</div>
+			
+			
+			<div class="f-page f-cover-back">
+				<div id="codrops-ad-wrapper">
+					<p><span><a href="navigate.html">Conferences SlideShow Style 1</a></span></p>
+			<p><span><a href="navigate1.html">Conferences SlideShow Style 2</a></span></p>
+			<p><span><a href="navigate2.html">Conferences SlideShow Style 3</a></span></p>
+			<p><span><a href="navigate3.html">Conferences SlideShow Style 4</a></span></p>
+			<p><span><a href="navigate4.html">Conferences SlideShow Style 5</a></span></p>
+			<p><span><a href="navigate5.html">Conferences SlideShow Style 6</a></span></p>
+			<p><span><a href="navigate6.html">Conferences SlideShow Style 7</a></span></p>
+			<p><span><a href="navigate7.html">Conferences SlideShow Style 8</a></span></p>
+			<p><span><a href="navigate8.html">Conferences SlideShow Style 9</a></span></p>
+            <p><span><a href="navigate9.html">Conferences SlideShow Style 10</a></span></p>
+            <p><span><a href="bootstrap/index.html">Conferences SlideShow Style 11</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+		
+	
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+				
+			var $container 	= $( '#flip' ),
+				$pages		= $container.children().hide();
+			
+			Modernizr.load({
+				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['js/jquery.tmpl.min.js','js/jquery.history.js','js/core.string.js','js/jquery.touchSwipe-1.2.5.js','js/jquery.flips.js'],
+				nope: 'css/fallback.css',
+				callback : function( url, result, key ) {
+					
+					if( url === 'css/fallback.css' ) {
+						$pages.show();
+					}
+					else if( url === 'js/jquery.flips.js' ) {
+						$container.flips();
+					}
+			
+				}
+			});
+				
+		</script>
+    </body>
+</html>
