@@ -25,11 +25,11 @@ $(window).load(function() {
     /*	STELLAR FOR BACKGROUND SCROLLING
 	/*---------------------------------------*/
 
-    $(window).stellar({
+    /*$(window).stellar({
         horizontalScrolling: false,
         responsive: true
     });
-
+*/
 });
 
 
