@@ -1,0 +1,134 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="musicbox.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<nav class="navbar navbar-toggleable-sm navbar-light bg-faded"> 
+  <a class="navbar-brand" href="#">MusicBox</a>
+    <ul class="navbar-nav mr-auto">   
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <input id="input-search" class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button id="btn-search" class="btn btn-outline-success my-2 my-sm-0">Search</button>
+    </div>
+</nav>
+<!-- HEADER::end -->
+
+<!-- MAIN -->
+<div class="row mt-2">
+  
+  <!-- RESULTADOS -->
+  <div class="col-sm-8 ">
+    <div class="container">
+      <ul class="list-unstyled" id="resultados">
+        
+
+      </ul>      
+    </div>
+  </div>
+  <!-- RESULTADOS::end -->
+  
+  <!-- FAVORITOS -->
+  <div class="col-sm-4">
+    <div class="container bg-faded">    
+      <h4 class="mb-3">Favourites</h4>
+        <ul class="list-unstyled" id="favoritos">
+          
+             
+      </ul>
+    </div>    
+  </div>
+  <!-- FAVORITOS -->
+  
+</div>
+<!-- MAIN::end -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function add_resultado(title, desc, image) {
+  var nodo =  '<li style="background-color:#9FF0CA" class="media mb-1">'
+           + '<img class="d-flex mr-3" src="' + image + '" >'
+           + '<div class="media-body">'
+           + '<h5 class="mt-0 mb-1">' + title + '</h5>' + desc
+           + '</div>'
+           + '<button class="btn btn-default align-self-center" data-title="' + title + '" data-desc="' + desc + '" data-image="' + image + '">+</button>'
+           + '</li>';  
+  $('#resultados').append(nodo);
+}
+
+
+/*
+ * Deffered event handler
+ */
+$('#resultados').on('click','button', function() {
+  var data = $(this).data();
+  console.log(data);
+  add_favorito(data.title, data.desc);
+  $(this).text("added favourite").attr('disabled',true);
+})
+
+
+/**
+ * Crear favorito
+ <li class="media mb-1">
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Song Title</h5>
+            Artist - Album
+          </div>
+        </li>
+ */
+function add_favorito(title, desc) {
+  var nodo =  '<li style="background-color:#A7F09F" class="media mb-1">'
+          + '<div class="media-body">'
+		  + '<a href="https://www.google.es/search?q='+title+'+'+desc+'">'
+          + '<h5 class="mt-0 mb-1">' + title + '</h5>'
+          + desc
+          + '</div></li>';  
+  $('#favoritos').append(nodo);
+}
+
+
+// BUSQUEDA
+
+/*
+ * Event Handler
+ */
+$('#btn-search').click(function() {
+  var textoBusqueda = $('#input-search').val();
+  console.log("Searching... " + textoBusqueda);
+  buscar(textoBusqueda);
+});
+
+function buscar(texto) {
+    $.ajax({
+      url: "https://api.deezer.com/search?&output=jsonp&q="+texto,
+      dataType: 'jsonp'      
+    })
+   .then(function(data) {
+      mostrar_datos(data);
+   })
+   .catch(function(err, t) {
+      console.log(t)
+   });
+}
+
+function mostrar_datos(datos) {
+  var $resultados = $("#resultados");
+  $resultados.empty();
+  datos.data.forEach(function(track) {
+     var title = track.title;
+     var desc = track.artist.name;
+     var image = track.album.cover_small;
+     add_resultado(title, desc, image);
+  });
+}
+
+</script>
+
+</body>
+</html>
