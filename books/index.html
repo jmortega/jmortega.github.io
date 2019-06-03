@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="Description" content="">
+
+  <meta name="author" content="Jose Manuel Ortega">
+  <meta name="keywords" content="python, java, books, secyurity">
+
+  <title>Libros de seguridad y hacking con python y java</title>
+
+  <!-- Bootstrap Core CSS and Custom Fonts -->
+  <link href="style.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+  <nav id="sidebar-wrapper">
+    <a id="menu-close" href="#" class="btn btn-light pull-right toggle">
+    <i class="fa fa-times"></i></a>
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a href="#top" onclick="$(&quot;#menu-close&quot;).click();">Inicio</a>
+      </li>
+      <li>
+        <a href="#about" onclick="$(&quot;#menu-close&quot;).click();">Acerca de...</a>
+      </li>
+      <li>
+        <a href="#publications" onclick="$(&quot;#menu-close&quot;).click();">Mis publicaciones</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Porfolio<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            <a href="#python" onclick="$(&quot;#menu-close&quot;).click();">Python</a>
+          </li>
+          <li>
+            <a href="#java" onclick="$(&quot;#menu-close&quot;).click();">Java</a>
+          </li>
+		  <li>
+          <a href="#docker" onclick="$(&quot;#menu-close&quot;).click();">Docker</a>
+          </li>
+		  <li>
+          <a href="#security" onclick="$(&quot;#menu-close&quot;).click();">Security</a>
+          </li>
+		  <li>
+          <a href="#networking" onclick="$(&quot;#menu-close&quot;).click();">Networking</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#all-publications" onclick="$(&quot;#menu-close&quot;).click();">Historial</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <header id="top" class="header">
+      <!-- Carousel -->
+      <div id="main-carousel" class="carousel container slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators hidden-xs">
+          <li data-target="#main-carousel" data-slide-to="0"></li>
+          <li data-target="#main-carousel" data-slide-to="1"></li>
+          <li data-target="#main-carousel" data-slide-to="2"></li>
+          <li data-target="#main-carousel" data-slide-to="3"></li>
+          <li data-target="#main-carousel" data-slide-to="4"></li>
+          <li data-target="#main-carousel" data-slide-to="5" class="active"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item">
+            <img class="img-responsive" src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/7/9781788992510.png" alt="security" width="255" height="255">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/5/8/58096_cover_0.png" alt="networking" width="255" height="255">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="https://ebooks.grupoeditorialrama.com/contents/fullcontent/50118070/coverarts/fluid/medium_50118070.jpg" alt="python" width="255" height="255">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="https://rclibros.es/wp-content/uploads/2019/02/9788494897238.jpg" alt="docker" width="255" height="255">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="https://ebooks.grupoeditorialrama.com/contents/fullcontent/50118068/coverarts/fluid/medium_50118068.jpg" alt="java" width="255" height="255">
+          </div>
+          <div class="item">
+            <img class="img-responsive" src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/7/9781788992510.png" alt="security" width="255" height="255">
+          </div>
+          <div class="item active">
+            <img class="img-responsive" src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/7/9781788992510.png" alt="security" width="255" height="255">
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#main-carousel" data-slide="prev">
+          <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#main-carousel" data-slide="next">
+          <span class="icon-next"></span>
+        </a>
+      </div>
+      <!-- End carousel -->
+  </header>
+  
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 text-center">
+          <h2>Jose Manuel Ortega</h2>
+		  <h4>
+			<p align="justify">
+			Soy ingeniero de software e investigador enfocado en nuevas tecnologías, open source y seguridad.
+			Mi objetivo profesional ha sido especializarme en Python y en los últimos años he mostrado interés en el desarrollo de la seguridad. 
+			He impartido formación a nivel universitario y ha colaborado con la escuela oficial de ingenieros en informática. 
+			He sido ponente en varias conferencias a nivel nacional e internacional,
+			las cuáles están disponibles en mi sitio personal <a target="_blank" href="http://jmortega.github.io">http://jmortega.github.io</a>
+			</p>
+			</h4>
+			<div class="col-lg-5 col-lg-offset-1 col-sm-6">
+				<img class="img-responsive"  src="author.png" />
+			</div>
+			<hr class="small">
+			
+          </div>
+      </div>
+	       
+      </div>
+	 
+
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- End about -->
+  
+  <!-- publications -->
+  <section id="publications" class="publications bg-primary">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2>Mis publicaciones</h2>
+          <hr class="small">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="miscellany-item">
+                <a class="btn btn-link" href="#java">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa fa-book fa-stack-1x"></i>
+                  </span>
+                </a>
+                <h4>
+                  <strong>Java</strong>
+                </h4>
+                <p>Seguridad en Aplicaciones web Java</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="miscellany-item">
+                <a class="btn btn-link" href="#python">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa fa-book fa-stack-1x"></i>
+                  </span>
+                </a>
+                <h4>
+                  <strong>Python</strong>
+                </h4>
+                <p>Hacking ético con herramientas python</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="miscellany-item">
+                <a class="btn btn-link" href="#docker">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa fa-book fa-stack-1x"></i>
+                  </span>
+                </a>
+                <h4>
+                  <strong>Docker</strong>
+                </h4>
+                <p>DOCKER. Seguridad y monitorización en contenedores e imágenes</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="miscellany-item">
+                <a class="btn btn-link" href="#security">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa fa-book fa-stack-1x"></i>
+                  </span>
+                </a>
+                <h4>
+                  <strong>Seguridad(Inglés)</strong>
+                </h4>
+                <p>Mastering Python for Networking and Security</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-3 col-sm-6">
+              <div class="miscellany-item">
+                <a class="btn btn-link" href="#networking">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa fa-book fa-stack-1x"></i>
+                  </span>
+                </a>
+                <h4>
+                  <strong>Networking(Inglés)</strong>
+                </h4>
+                <p>Learning Python Networking - Second Edition</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.row (nested) -->
+        </div>
+        <!-- /.col-lg-10 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- End publications -->
+  
+  <!-- Callout -->
+  <aside class="callout">
+    <div class="text-vertical-center">
+      <div class="col-lg-12 col-sm-12">
+        <div class="clearfix"></div>
+        <img class="img-novedades" src="books.png" alt="security">
+        <a target="_blank" class="btn btn-link" href="https://www.amazon.com/Jos%25C3%25A9-Manuel-Ortega/e/B07JH38HXD">
+          <span class="fa-stack">
+            <i class="fa fa-eye fa-stack-2x"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </aside>
+  <!-- End callout -->
+  
+  <!-- Portfolio -->
+  <!-- Page Content Python -->
+  <a id="python"></a>
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2 class="section-heading text-center">
+            Hacking ético con herramientas python
+          </h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <div class="clearfix"></div>
+          <p class="lead">El objetivo del libro es capacitar a aquellos interesados en la seguridad, a aprender a utilizar Python como lenguaje de programación, no solo para poder construir aplicaciones, sino también para automatizar y especificar muchas de las tareas que se realizan durante un proceso de auditoría de seguridad.</p>
+           <p class="lead"><a target="_blank" href="http://www.ra-ma.es/libros/HACKING-ETICO-CON-HERRAMIENTAS-PYTHON/98877/978-84-9964-731-9">Más detalles...</a></p>
+		  <p class="lead"><a target="_blank" href="https://ebooks.grupoeditorialrama.com/product/hacking-tico-con-herramientas-python50118070">Edición digital...</a></p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+          <img class="img-responsive" src="https://ebooks.grupoeditorialrama.com/contents/fullcontent/50118070/coverarts/fluid/medium_50118070.jpg" alt="python" width="230" height="230">
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-section-a -->
+
+  <a id="java"></a>
+  <div class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2 class="section-heading text-center">
+            Seguridad en Aplicaciones web Java
+          </h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-push-6  col-sm-6">
+          <div class="clearfix"></div>
+          <p class="lead">El objetivo de este libro es enseñar los principales criterios y buenas prácticas para crear aplicaciones web de forma segura en Java. Además comentaremos los aspectos de seguridad en las diferentes etapas del desarrollo de aplicaciones web en Java, alineadas a las buenas prácticas propuestas por OWASP (Open Web Application Security Project) y en particular el top ten de vulnerabilidades que podemos encontrar en aplicaciones web. Veremos cómo configurar la seguridad de nuestras aplicaciones en los principales servidores de aplicaciones del mercado y detallaremos los pasos a seguir para implementar mecanismos de seguridad con el framework Spring Security, un proyecto de Spring que permite controlar de forma declarativa y totalmente configurable la seguridad
+de nuestra aplicación.</p>
+          <p class="lead"><a target="_blank" href="http://www.ra-ma.es/libros/SEGURIDAD-EN-APLICACIONES-WEB-JAVA/98403/978-84-9964-732-6">Más detalles...</a></p>
+          <p class="lead"><a target="_blank" href="https://ebooks.grupoeditorialrama.com/product/seguridad-en-aplicaciones-web-java50118068">Edición digital...</a></p>
+        </div>
+        <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+          <img class="img-responsive" src="https://ebooks.grupoeditorialrama.com/contents/fullcontent/50118068/coverarts/fluid/medium_50118068.jpg" alt="Seguridad Java" width="230" height="230">
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-section-b -->
+
+  <a id="docker"></a>
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2 class="section-heading text-center">
+            DOCKER. Seguridad y monitorización en contenedores e imágenes
+          </h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <div class="clearfix"></div>
+          <p class="lead">Este libro tiene como objetivo facilitar al lector los conocimientos necesarios para entender cómo gestiona Docker la seguridad tanto desde el punto de vista de la máquina donde lo ejecutamos, como desde el desarrollo y despliegue de imágenes. </p>
+          <p class="lead"><a target="_blank" href="https://rclibros.es/producto/docker-seguridad-y-monitorizacion-en-contenedores-e-imagenes/">Más detalles...</a></p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+          <img class="img-responsive" src="https://rclibros.es/wp-content/uploads/2019/02/9788494897238.jpg" alt="Docker" width="230" height="230">
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-section-a -->
+  <!-- End Page Content Docker -->
+  
+  <!-- Page Content Security -->
+  <a id="security"></a>
+  <div class="content-section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2 class="section-heading text-center">
+            Mastering Python for Networking and Security
+          </h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-push-6  col-sm-6">
+          <div class="clearfix"></div>
+          <p class="lead">This book covers topics from building a network to the different procedures you need to follow to secure it. You’ll first be introduced to different packages and libraries, before moving on to different ways to build a network with the help of Python scripting. Later, you will learn how to check a network’s vulnerability using Python security scripting, and understand how to check vulnerabilities in your network. As you progress through the chapters, you will also learn how to achieve endpoint protection by leveraging Python packages along with writing forensic scripts. By the end of this book, you will be able to get the most out of the Python language to build secure and robust networks that are resilient to attacks.</p>
+          <p class="lead"><a target="_blank" href="https://github.com/PacktPublishing/Mastering-Python-for-Networking-and-Security">Más detalles...</a></p>
+          <p class="lead"><a target="_blank" href="https://www.packtpub.com/networking-and-servers/mastering-python-networking-and-security">Edición digital...</a></p>
+        </div>
+        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+          <img class="img-responsive" src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/7/9781788992510.png" alt="Security" width="230" height="230">
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-section-b -->
+
+  <a id="networking"></a>
+  <div class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2 class="section-heading text-center subtitle">
+            Learning Python Networking - Second Edition<br>
+          </h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <div class="clearfix"></div>
+          <p class="lead">	
+Network programming has always been a demanding task. With full-featured and well-documented libraries all the way up the stack, Python makes network programming the enjoyable experience it should be.
+
+Starting with a walk through of today's major networking protocols, through this book, you'll learn how to employ Python for network programming, how to request and retrieve web resources, and how to extract data in major formats over the web. You will utilize Python for emailing using different protocols, and you'll interact with remote systems and IP and DNS networking. You will cover the connection of networking devices and configuration using Python 3.7, along with cloud-based network management tasks using Python.
+
+As the book progresses, socket programming will be covered, followed by how to design servers, and the pros and cons of multithreaded and event-driven architectures. You'll develop practical clientside applications, including web API clients, email clients, SSH, and FTP. These applications will also be implemented through existing web application frameworks.</p>
+          <p class="lead"><a target="_blank" href="https://github.com/PacktPublishing/Learning-Python-Networking-Second-Edition">Más detalles...</a></p>
+          <p class="lead"><a target="_blank" href="https://www.packtpub.com/networking-and-servers/learning-python-networking-second-edition">Edición digital...</a></p>
+        </div>
+        <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+          <img class="img-responsive" src="https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/5/8/58096_cover_0.png" alt="networking" width="230" height="230">
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-section-a -->
+
+  </div>
+  <!-- /.content-section-a -->
+  <!-- End Page Content Java -->
+  <!-- End Portfolio -->
+  
+  <!-- Page Content Todas las publicaciones -->
+  <section id="all-publications" class="historical">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <hr>
+          <h2 class="section-heading text-center">
+           Resumen publicaciones
+          </h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 ">
+          <table id="tables">
+            <tbody><tr>
+              <th>Título</th>
+              <th>ISBN</th>
+              <th>Año</th>
+            </tr>
+            <tr>
+              <td><a href="#networking">Learning Python Networking - Second Edition</a></td>
+              <td>9781789958096</td>
+              <td>2019</td>
+            </tr>
+			<tr>
+              <td><a href="#docker">DOCKER. Seguridad y monitorización en contenedores e imágenes</a></td>
+              <td>9788494897238</td>
+              <td>2019</td>
+            </tr>
+			<tr>
+              <td><a href="#security">Mastering Python for Networking and Security</a></td>
+              <td>9781788992510</td>
+              <td>2018</td>
+            </tr>
+			<tr>
+              <td><a href="#java">Seguridad en Aplicaciones web Java</a></td>
+              <td>978-84-9964-732-6</td>
+              <td>2018</td>
+            </tr>
+			<tr>
+              <td><a href="#python">Hacking ético con herramientas python</a></td>
+              <td>978-84-9964-731-9</td>
+              <td>2018</td>
+            </tr>
+           
+          </tbody></table>
+        </div>
+      </div>
+      <hr>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- End Page Content Todas las publicaciones -->
+  
+ 
+ <!-- Footer -->
+  <footer>
+        <div class="text-center">
+          <a href="mailto:jmortegac@protonmail.com" id="my-email" data-user="jmortegac" data-domain="@protonmail.com"></a><br/><br/>
+          <br>
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.youtube.com/channel/UC15z66zJUg9mL-a4B9258mg" target="_blank"><i class="fa fa-youtube fa-fw fa-3x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jmortega1" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/jmortegac" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+            </li>
+          </ul>
+          <hr class="small">
+          <p class="text-muted">Copyright © jmortegac 2019</p>
+        </div>
+  </footer>
+
+  <!-- jQuery and Bootstrap Core JavaScript -->
+  <script src="javascript.js"></script>
+  
+  <!-- Custom Theme JavaScript -->
+  <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function (e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function () {
+      $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          if (this.hash.slice(1) == "main-carousel") {
+            return "main-carousel";
+          }
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+
+    $("#btnVideo1").click(function () {
+      var mediaElement = document.getElementById("video1");
+      mediaElement.pause();
+    });
+
+    $("#btnVideo2").click(function () {
+      var mediaElement = document.getElementById("video2");
+      mediaElement.pause();
+    });
+
+    $('.carousel').carousel({
+      interval: 6000 //changes the speed
+    })
+    
+  </script>
+
+</body></html>
