@@ -58,7 +58,8 @@
 									<span class="image center"><a href="https://www.paraninfo.es/catalogo/9788413661162/" target="_blank"><img src="banner.png" alt="ciberseguridad" /></a></span>
 									<br/>
 									<a href="https://anikaentrelibros.com/ciberseguridad--manual-practico" target="_blank"><font color="orange" size="6">Reseña del libro</font></a></span><br/>
-									<a href="https://www.tecnoideas20.com/blog/2022/10/06/j-m-ortega-hay-que-tener-formacion-reglada-y-luego-complementarlo-con-asistencia-a-congresos/" target="_blank"><font color="orange" size="6">Entrevista</font></a></span>
+									<a href="https://www.tecnoideas20.com/blog/2022/10/06/j-m-ortega-hay-que-tener-formacion-reglada-y-luego-complementarlo-con-asistencia-a-congresos/" target="_blank"><font color="orange" size="6">Entrevista Parte 1</font></a></span><br/>
+									<a href="https://www.tecnoideas20.com/blog/2022/10/11/entrevista-a-jose-manuel-ortega-ingeniero-de-software-e-investigador-de-seguridad-2a-parte/" target="_blank"><font color="orange" size="6">Entrevista Parte 2</font></a></span>
 								
 								</div>
 							</section>
@@ -106,6 +107,20 @@
 										<li class=" fa-terminal"><a href="https://sessionize.com/jose-manuel-ortega/" target="_blank">Sesionize</a></li>
 									</ul>
 									</p>
+									<h4>Sharing secret keys in Docker containers and K8s. Conf42: Kube Native 2022</h4>
+									<p><span class="image right"><img src="https://i.ibb.co/DV8yHV2/conf42.png" width="350px" alt="KUbeNative 2022" /></span>
+									In this talk I will show how to save secret keys in Docker containers and K8s in production and best practices for saving and securing distribution of secrets. With Docker and k8s secrets we can manage information related to keys that are needed at runtime but cannot be exposed in the Docker image or source code repository.
+										These could be the main talking points:
+										1.Challenges of security and secret keys in containers
+										2.Best practices for saving and securing distribution of secrets in Docker Containers
+										3.Managing secrets in Kubernetes using volumes and sealed-secrets
+										4.Other tools for distributing secrets in containers like Hashicorp Vault and KeyWhiz
+									<ul class="actions">	
+										<li><a href="https://speakerdeck.com/jmortega/sharing-secret-keys-in-docker-containers-and-k8s" target="_blank" class="button special icon fa-download">Descargar presentaci&oacute;n</a></li>
+										<li><a href="https://www.conf42.com/Kube_Native_2022_Jose_Manuel_Ortega_sharing_secret_keys_docker_containers_k8s" target="_blank" class="button special icon fa-download">Conferencia</a></li>
+										<li><a href="#" target="_blank" rel="noopener noreferrer" class="button special icon fa-television">Video (youtube) </a></li>
+									</ul>
+									<hr />
 									<h4>Implementing cert-manager in K8s. KubeCon 2022</h4>
 									<p><span class="image right"><img src="https://i.imgur.com/WFEduJ1.png" width="350px" alt="KUbecon 2022" /></span>
 									One of the best practices from a security point of view is to introduce the management of the certificates that we are going to use to support protocols such as SSL / TLS. In this talk we will explain cert-manager and his implementation in K8s as a native Kubernetes certificate management controller that allows us to manage connection certificates and secure communications through SSL/TLS protocols. Later I will explain the main functionalities and advantages that cert-manager provides, for example it allows us to validate that the certificates we are using in different environments are correct. Finally, some use cases are studied in which to use cert-manager and the integration with other services such as Let's Encrypt or HashiCorp Vault.
