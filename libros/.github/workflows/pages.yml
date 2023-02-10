@@ -1,0 +1,43 @@
+name: Publish to GitHub Pages
+
+on:
+  # Esta acción se ejecuta cuando se hace un push a la rama main
+  push:
+    branches: ["main"]
+  
+permissions:
+  # Esta acción necesita permisos para escribir en el repositorio
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  # Tarea para hacer un build de la página web
+  create-docs:
+    environment: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      # Empezamos clonando el repositorio en la máquina virtual que se encargará de todo
+      # y luego instalamos las dependencias necesarias para hacer el build.
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r mkdocs-requirements.txt
+      # Una vez instaladas las dependencias, hacemos el build de la página web y la subimos
+      - name: Build docs
+        run: mkdocs build
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './site'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

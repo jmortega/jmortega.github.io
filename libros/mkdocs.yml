@@ -1,0 +1,47 @@
+# mkdocs.yml - https://realpython.com/python-project-documentation-with-mkdocs
+
+site_name: Books
+theme:
+  name: material
+  features:
+    - content.code.annotate
+  palette:
+    primary: blue
+    accent: orange
+  font:
+    text: Exo 2
+    code: Hack
+  language: es
+  favicon: images/Isotipo-DEEPSUA_SinFondo.png
+  logo: images/Isologo-DEEPSUA_SinFondo.png
+
+plugins: 
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+            show_root_heading: true
+            heading_level: 3
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: 
+        true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+      toc_depth: 6
+      baselevel: 2
+  - tables
+
+nav:
+  - Home: index.md
+  - Introducción: intro.md
+  - Projects: projects.md
+  - Actions: actions.md
+
+extra: 
+  generator: false
