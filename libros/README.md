@@ -1,6 +1,6 @@
 # Big data, machine learning y data science en python
 
-Enlace editorial(https://www.ra-ma.es/libro/big-data-machine-learning-y-data-science-en-python_145747/).
+Enlace editorial [este enlace](https://www.ra-ma.es/libro/big-data-machine-learning-y-data-science-en-python_145747/).
 
 El libro está dirigido aquellos lectores que estén trabajando en proyecto relacionados con big data y busquen identificar las características de una solución de Big Data, los datos asociados a estas soluciones, la infraestructura requerida, y las técnicas de procesamiento de esos datos. Entre los principales objetivos podemos destacar:
 
@@ -29,7 +29,6 @@ El libro trata de seguir un enfoque teórico-práctico con el objetivo de afianz
 
 
 ## Contenido
-
 1. Introducción a Big Data
 2. Arquitecturas Big Data
 3. Bases de datos para Big Data
