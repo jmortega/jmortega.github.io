@@ -30,21 +30,19 @@ El libro trata de seguir un enfoque teórico-práctico con el objetivo de afianz
 
 ## Contenido
 
-1.Introducción a Big Data
-2.Arquitecturas Big Data
-3.Bases de datos para Big Data
-4.Introducción a ciencia de datos y ML
-5.Tratamiento de datos con Python
-6.Scikit-learn como librería de ML
-7.Redes neuronales artificiales
-8.Plataforma Hadoop
-9.Procesamiento distribuído con Apache Spark
-10.PySpark como librería de procesamiento distribuído
-11.Entornos de ejecución Spark
-12.Mllib como librería de Machine Learning
-13.Sistemas de recomendación
-
-GitHub Actions es una herramienta que nos permite automatizar tareas. Se pueden crear _workflows_ que se ejecutan cuando se produce un evento, como un _push_ a una rama, un _pull request_ o un _issue_. Los _workflows_ se pueden crear en un fichero de texto plano, en YAML, que se almacena en el repositorio. Los _workflows_ se pueden ejecutar en un entorno de ejecución, que puede ser un contenedor de Docker o una máquina virtual.
+1. Introducción a Big Data
+2. Arquitecturas Big Data
+3. Bases de datos para Big Data
+4. Introducción a ciencia de datos y ML
+5. Tratamiento de datos con Python
+6. Scikit-learn como librería de ML
+7. Redes neuronales artificiales
+8. Plataforma Hadoop
+9. Procesamiento distribuído con Apache Spark
+10. PySpark como librería de procesamiento distribuído
+11. Entornos de ejecución Spark
+12. Mllib como librería de Machine Learning
+13. Sistemas de recomendación
 
 
 
